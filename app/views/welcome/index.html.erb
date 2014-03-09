@@ -1,0 +1,25 @@
+
+<h3 id="c-home-title" class="c-title"><span>Welcome</span></h3>
+<div class="c-photo">
+	<%=image_tag "KenandRenee.jpg" %>
+</div>
+<div id="c-home-container" class="c-container">
+
+	<div class="c-info">
+		<p class="c-date">Our wedding date: October 18, 2014</p>
+		<p id="c-countdown"><span id="c-countdown-days"></span><span id="c-countdown-text"></span></p></div>
+		<div class="c-text">
+			<p>Thank you for visiting our wedding website!  We’re so excited to share the celebration of our love with you, our treasured families and friends. We hope you’ll be able to join us for our special day!</p>
+		</div>
+	</div>
+</div>
+
+<% if flash[:warning] or flash[:notice] %>
+
+  <script type="text/javascript">
+          function noticeAlert() {
+              alert("<%= flash[ :notice ] %>");
+          };
+					window.onload = noticeAlert();
+  </script>
+<% end %>

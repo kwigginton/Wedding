@@ -1,0 +1,1082 @@
+/*******************/
+/* Template styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+
+
+p,
+h3,
+h4,
+h5 {
+    margin: 1em 0;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+ol,
+ul,
+dir,
+menu,
+dd {
+    margin: 1em 0 1em 40px;
+}
+
+ol ul,
+ul ol,
+ul ul,
+ol ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+iframe {
+    background: transparent;
+}
+
+img {
+    border: 0; /* no borders on img inside links */
+    -ms-interpolation-mode: bicubic; /* helps client side scaling in IE 7 */
+}
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+#t-container {
+    width: 760px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#t-header h1,
+#t-header h2 {
+    display: none;
+}
+
+#t-center {
+    position: relative;
+    _height: 1%;
+}
+
+#t-links {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 180px;
+}
+
+#t-links #facebook-button {
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+#t-content {
+    margin: 0 0 0 180px;
+    min-height: 300px;
+    _height: 300px;
+}
+
+#t-links ul {
+    list-style: none;
+}
+
+#t-footer {
+    text-align: center;
+}
+
+/***********************/
+/* Default form styles */
+
+.c-error-message {
+    clear: both;
+    border: 1px solid #ff0000;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 1em 0;
+}
+
+.c-error-message p,
+.c-error-message li {
+    color: #ff0000;
+}
+
+.c-form {
+    clear: both;
+}
+
+table.c-form {
+    border-collapse: collapse;
+}
+
+table.c-form td {
+    padding: 2px 0;
+    vertical-align: top;
+}
+
+.c-form label {
+    margin-right: 1em;
+}
+
+.c-input-text {
+    width: 250px;
+}
+
+.c-input-number {
+    width: 40px;
+}
+
+.c-input-date {
+    width: 80px;
+}
+
+.c-form small {
+    display: block;
+}
+
+.c-error-list {
+    margin: 0 0 10px 30px;
+}
+
+ul.c-buttons {
+    width: 350px;
+    margin-top: 10px;
+    list-style: none;
+    text-align: right;
+}
+
+ul.c-buttons li {
+    display: inline;
+    padding: 0 0 0 5px;
+}
+
+/*****************/
+/* Global styles */
+.c-info p {
+    margin: 0;
+}
+
+/**************************/
+/* Page navigation styles */
+
+.c-page-navigation {
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+
+.c-page-navigation .c-page-up {
+    text-align: left;
+}
+
+.c-page-navigation .c-page-up a {
+    padding-right: 20px;
+}
+
+.c-page-navigation .c-page-sequence {
+    padding: 10px 0;
+    list-style-type: none;
+    text-align: right;
+}
+
+.c-page-navigation .c-page-previous,
+.c-page-navigation .c-page-next {
+    display: inline;
+}
+
+.c-page-navigation .c-page-previous a,
+.c-page-navigation .c-page-next a {
+    text-decoration: none;
+}
+
+.c-page-navigation .c-page-current {
+    float: left;
+}
+
+.c-page-navigation .c-page-up .c-separator {
+    /***display: none;****/
+}
+
+/********************/
+/* Our story styles */
+
+#c-story-container .c-photo {
+    float: right;
+    padding: 0 0 10px 10px;
+}
+
+#c-story-container .c-odd,
+#c-story-container .c-even {
+    clear: right;
+}
+
+/*************************/
+/* Wedding events styles */
+
+#c-events-container h5 {
+    margin: 0;
+}
+
+#c-events-container p {
+    margin-top: 0;
+}
+
+/************************/
+/* Wedding party styles */
+
+#c-party-container .c-photo {
+    float: left;
+    padding: 0 10px 10px 0;
+}
+
+#c-party-container .c-odd,
+#c-party-container .c-even {
+    clear: left;
+}
+
+/********************/
+/* Guestbook styles */
+
+#c-guestbook-container .c-text {
+    margin: 0;
+}
+
+#c-guestbook-container .c-text p {
+    margin-top: 0;
+}
+
+#c-guestbook-sign-link {
+    margin: 1em 0;
+}
+
+/***************/
+/* RSVP styles */
+
+#c-rsvp-attendance {
+    margin: 1em 0;
+}
+
+#c-rsvp-attend {
+    list-style: none;
+}
+
+#c-rsvp-guests td {
+    padding-right: 1em;
+}
+
+.c-rsvp-guest label {
+    display: block;
+}
+
+.c-rsvp-guest .c-input-text {
+    width: 110px;
+}
+
+.c-rsvp-guest .c-select {
+    width: 150px;
+}
+
+/******************/
+/* Gallery styles */
+
+#c-galleries-container ul,
+#c-photo-list-container ul {
+    list-style: none;
+}
+
+#c-galleries-container .c-photo {
+    float: left;
+    width: 210px;
+    padding: 0 10px 10px 0;
+    text-align: center;
+}
+
+#c-galleries-container .c-odd,
+#c-galleries-container .c-even {
+    position: relative;
+    clear: left;
+}
+
+/*#c-galleries-container .c-subtitle {
+	position: absolute;
+	top: 0;
+	left: 210px;
+}*/
+
+#c-galleries-container .c-text {
+    padding: 30px 0 0 0;
+}
+
+#c-photo-list-container .c-subtitle {
+    display: none;
+}
+
+#c-photo-list-container .c-text {
+    display: none;
+
+}
+
+#c-photo-list-container .c-page-navigation {
+    text-align: center;
+    margin: 10px auto;
+}
+
+#c-photo-list-container .c-page-previous,
+#c-photo-list-container .c-page-next {
+    display: none;
+}
+
+#c-photo-list-container .c-page-list li {
+    display: inline;
+}
+
+#c-photo-list li {
+    float: left;
+    width: 210px;
+    height: 210px;
+    margin: 0;
+    padding: 10px;
+}
+
+/*** Start photo-centering hijinx ***/
+
+/* These rules are for internet explorer */
+#c-photo-list .c-photo {
+    overflow: hidden;
+    position: relative;
+    width: 210px;
+    height: 210px;
+}
+
+#c-photo-list .c-photo a {
+    display: block;
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+}
+
+#c-photo-list img {
+    display: block;
+    position: relative;
+    top: -50%;
+    left: -50%;
+}
+
+/* These are for firefox/standards compliant browsers */
+#c-photo-list>li .c-photo {
+    display: table;
+}
+
+#c-photo-list>li .c-photo a {
+    display: table-cell;
+    position: static;
+    vertical-align: middle;
+}
+
+#c-photo-list>li img {
+    position: static;
+    margin: 0 auto;
+}
+
+/*** End photo-centering hijinx ***/
+
+#c-photo-container .c-photo-frame {
+    clear: both;
+}
+
+#c-photo-container .c-subtitle {
+    display: none;
+}
+
+#c-photo-container .c-even,
+#c-photo-container .c-odd {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#c-photo-container .c-photo,
+#c-photo-container .c-text {
+    text-align: center;
+}
+
+/*****************/
+/* Custom Styles */
+#c-custom-container .c-photo {
+    float: right;
+    padding: 0 0 10px 10px;
+}
+
+#c-custom-container .c-odd,
+#c-custom-container .c-even {
+    clear: right;
+}
+
+/*****************/
+/* Events Styles */
+#c-events-container .c-photo {
+    float: right;
+    padding: 0 0 10px 10px;
+}
+
+#c-events-container .c-odd,
+#c-events-container .c-even {
+    clear: right;
+}
+
+/*****************/
+/* Accommodations Styles */
+#c-accommodations-container .c-photo {
+    float: right;
+    padding: 0 0 10px 10px;
+}
+
+#c-accommodations-container .c-odd,
+#c-accommodations-container .c-even {
+    clear: right;
+}
+
+/*****************/
+/* Attractions Styles */
+#c-attractions-container .c-photo {
+    float: right;
+    padding: 0 0 10px 10px;
+}
+
+#c-attractions-container .c-odd,
+#c-attractions-container .c-even {
+    clear: right;
+}
+
+/****************/
+/* Login styles */
+
+#c-login-unregistered {
+    clear: both;
+}
+
+#c-register-form,
+#c-private-request {
+    margin-top: 50px;
+}
+
+/****************/
+/* Music styles */
+#c-player-body {
+    background-image: none;
+    margin: 10px;
+}
+
+#c-music-container #c-music-playlist .c-subtitle {
+    font-weight: bold;
+}
+
+#c-music-container #c-music-playlist .c-link {
+    float: right;
+    margin-right: 10px;
+}
+
+#c-music-container #c-music-playlist .c-odd,
+#c-music-container #c-music-playlist .c-even {
+    border-bottom: 1px dotted;
+    margin: 0;
+    padding: 10px 10px 10px 5px;
+}
+
+#c-music-container #c-music-suggestions h4 {
+    margin-top: 2em;
+}
+
+#c-music-container #c-music-suggestions .c-odd {
+    border-bottom: 1px dotted;
+    margin: 0;
+    padding: 10px 0 10px 0;
+}
+
+#c-music-container #c-music-suggestions .c-even {
+    border-bottom: 1px dotted;
+    margin: 0;
+    padding: 10px 0 10px 0;
+}
+
+#c-music-container #c-music-suggestions .c-subtitle {
+    font-weight: bold;
+}
+
+#c-music-container #c-music-suggestions .c-info p {
+    line-height: 1.3em;
+}
+
+#c-music-container #c-music-suggestions .c-info .c-odd,
+#c-music-container #c-music-suggestions .c-info .c-even {
+    border: none;
+    padding: 0;
+    margin: 15px 10px 0px 10px;
+}
+
+#c-music-container #c-music-suggestions .c-link {
+    display: block;
+    margin-top: 10px;
+}
+
+#c-music-container a {
+    display: block;
+    margin-top: .5em;
+}
+
+/****************/
+/* Blog styles  */
+.c-blog-container .c-intro {
+    margin-bottom: 2em;
+}
+
+.c-blog-container h3,
+.c-blog-container h4 {
+    margin-bottom: .25em;
+}
+
+.c-blog-container .c-continue {
+    float: right;
+}
+
+.c-blog-container .c-continue {
+    font-size: .9em;
+}
+
+.c-blog-container .c-comments {
+    float: left;
+    font-size: .9em;
+}
+
+.c-blog-container .c-byline {
+    margin: .25em 0 .5em 0;
+}
+
+.c-blog-comment-container .c-byline {
+    margin: .25em 0 .5em 0;
+}
+
+.c-blog-container .c-odd,
+.c-blog-container .c-even {
+    margin: 1em 0;
+    border-bottom: 1px dotted;
+    padding-bottom: .5em;
+}
+
+.c-blog-container p {
+    margin-bottom: .5em;
+}
+
+.c-blog-comment-container {
+    margin-top: 2em;
+}
+
+.c-blog-comment-container .c-odd,
+.c-blog-comment-container .c-even {
+    border-bottom: 1px dotted;
+}
+
+.c-blog-container .c-feed-links {
+    text-align: right;
+    font-size: .9em;
+}
+
+.c-blog-container .c-feed-links span {
+    background: url("../../../images/icon/feed-icon-16x16.gif") no-repeat left center;
+    padding: 5px 0 5px 20px;
+}
+
+.c-blog-container #c-blog-comment-heading {
+    margin-top: 2em;
+}
+
+/* This overrides a commonly set style in individual design stylesheets
+ * that puts margin on the next button to line it up on that page. This doesn't
+ * apply on the blog page, so here's a reset. */
+.c-blog-container .c-page-next {
+    margin: 0;
+}
+
+/***************/
+/* Style fixes */
+
+/* Force alternating rows to always enclose their floated elements */
+/* Hide from IE5/Mac \*/
+* html .c-even,
+* html .c-odd,
+* html #c-photo-list {
+    height: 1%;
+}
+
+/* End hide from IE5/Mac */
+#t-content:after,
+.c-even:after,
+.c-odd:after,
+#c-photo-list:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* KLO-1947:  Override the after display for <tr>'s (to fix unexpected result in chrome) */
+tr.c-even:after,
+tr.c-odd:after {
+    display: none;
+}
+
+#blogCommentForm dt {
+    margin-bottom: 10px;
+}
+
+#blogCommentForm dd {
+    margin: 0px 0px 10px 0px;
+}
+
+#captchaForm dt {
+    margin-bottom: 10px;
+}
+
+#captchaForm dd {
+    margin: 0px 0px 10px 0px;
+}
+
+#captchaForm pre {
+    margin-bottom: 10px;
+}
+
+#captchaForm ul.errors {
+    list-style-type: none;
+    color: red;
+    margin: 10px 0px 0px 0px !important;
+    padding: 0px !important;
+}
+
+#captchaForm ul.errors li {
+    margin: 0px;
+    padding: 0px;
+}
+
+.c-form {
+    font-size: 16px;
+    color: #333;
+}
+
+#c-contact-container {
+    padding: 0;
+}
+
+.c-form input {
+    width: 320px;
+    height: 25px;
+    background: #fef9fa; /* background color for name and email field */
+    color: #666; /* text color for inside of name and email field */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; /* future proofing */
+    border: 1px solid #999;
+    margin-bottom: 15px;
+    -moz-box-shadow: inset 0 0 10px #ccc; /*color for inset shadow in name and email field */
+    -webkit-box-shadow: inset 0 0 10px #ccc;
+    box-shadow: inset 0 0 10px #ccc;
+    padding: 4px;
+}
+
+.c-form input:hover {
+    background: rgb(255, 255, 255); /* IE fallback */
+    background: rgba(255, 255, 255, 0.7); /* background color for name and email field in HOVER state*/
+}
+
+.c-form input:focus {
+    background: rgb(255, 255, 255); /* IE fallback */
+    background: rgba(255, 255, 255, 0.9); /* background color for name and email field when clicked on (Active) */
+    color: #333;
+}
+
+.c-form textarea {
+    width: 320px;
+    height: 100px;
+    border: 1px solid #999;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; /* future proofing */
+    -moz-box-shadow: inset 0 0 10px #ccc; /*color for inset shadow in comment field */
+    -webkit-box-shadow: inset 0 0 10px #ccc;
+    box-shadow: inset 0 0 10px #ccc;
+    padding: 4px;
+}
+
+.c-form textarea:hover {
+    background: rgb(255, 255, 255); /* IE fallback */
+    background: rgba(255, 255, 255, 0.7); /* background color for comment field in HOVER state*/
+}
+
+.c-form textarea:focus {
+    background: rgb(255, 255, 255); /* IE fallback */
+    background: rgba(255, 255, 255, 0.9); /* background color for comment field when clicked on (Active) */
+    color: #333;
+}
+
+.c-input-text {
+    font-size: 16px;
+    color: #333;
+}
+
+/*===================================================================*/
+/* ************************* RSVP **************************** */
+/*===================================================================*/
+
+#c-rsvp-contact h4, #info h4 {
+    margin-bottom: 25px;
+}
+
+#c-rsvp-contact label {
+    padding-left: 30px;
+}
+
+#c-rsvp-comments {
+    padding-left: 110px;
+}
+
+#c-rsvp-attend-yes, #c-rsvp-attend-no {
+    margin: 0;
+    padding: 0 0 0 50px;
+    height: 34px;
+}
+
+#c-rsvp-attend-yes input, #c-rsvp-attend-no input, #c-register-agree-terms input {
+    width: 30px;
+    height: 20px;
+}
+
+#c-rsvp-attend-yes label, #c-rsvp-attend-no label {
+    margin: 0;
+    padding: 0;
+    height: 34px;
+}
+
+#c-rsvp-num-guests input {
+    width: 40px;
+    text-align: center;
+}
+
+.c-buttons input {
+    border: none;
+    height: 30px;
+    width: 150px;
+
+}
+
+/*===================================================================*/
+
+/*===================================================================*/
+/* REGISTRIES */
+
+#c-registries-container .c-even, #c-registries-container .c-odd {
+    position: relative;
+    width: 300px;
+    float: left;
+    background: #fff;
+    text-align: center;
+    border: 10px solid #ccc; /* IE 8 fallback */
+    border: 10px solid rgba(0, 0, 0, 0.2);
+    margin: 0 0 15px 20px;
+    padding: 0 0px 40px 0px;
+}
+
+#c-registries-container .c-text {
+    margin: 0;
+    padding: 0 10px;
+}
+
+#c-registries-container .c-text p {
+    color: #333;
+}
+
+#c-registries-container .c-info {
+    padding: 0 10px;
+}
+
+#c-registries-container .c-subtitle {
+    display: table-cell;
+    height: 100px;
+    width: inherit;
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#c-registries-container .c-subtitle h4 {
+    font-size: 22px;
+    padding: 28px 0 28px 0;
+    color: #333;
+}
+
+#c-registries-container .c-subtitle h4 {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#c-registries-container .c-subtitle h4 a {
+    color: #444;
+    text-decoration: none;
+}
+
+#c-registries-container .c-subtitle h4 a:visited {
+    color: #444;
+}
+
+#c-registries-container .c-subtitle h4 a:hover {
+    color: #646464;
+}
+
+/* maintain styles for old style registries until republished */
+#c-registries-container .c-subtitle img {
+    max-width: 280px;
+    height: auto !important;
+    zoom: 1;
+}
+
+#c-registries-container .c-subtitle h4 a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#c-registries-container .c-link {
+    background: #444;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 12px;
+    padding: 5px 0 5px 0;
+    width: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 25%;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: inset 0 0 10px #ccc;
+    -webkit-box-shadow: inset 0 0 10px #ccc;
+}
+
+#c-registries-container .c-link a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#c-registries-container .c-link:hover {
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    -webkit-transition: background .5s ease;
+    -moz-transition: background .5s ease;
+    -o-transition: background .5s ease;
+    transition: background .5s ease;
+}
+
+/*===================================================================*/
+
+
+  /*style_rules
+email_line_color #EA8E7F
+email_text_color #636466
+email_link_color #EA8E7F
+email_border_color #EA8E7F
+home_photo_max_width 400 x 300
+*/
+* { margin: 0; padding: 0; }
+
+/* Set background color and any image for entire site */
+body { margin: 0px; font-family:  Verdana, arial, sans-serif; font-size: 14px; color: #636466; text-align: center; background-position: top; background: url('890_bg_hl_peach.jpg'); background-repeat: repeat; background-position: top; background-color: #ffffff; }
+
+p { color: #636466; }
+
+/* Set links for template */
+a { color: #EA8E7F; }
+
+a:visited { color: #EA8E7F; }
+
+a:hover { color: #EA8E7F; }
+
+small { font-size: 9pt; margin-top: 1.5%; margin-bottom: 1.5%; }
+
+/*=================================================================*/
+/*Polaroid border and drop shadow style for photos*/
+.c-photo img { background: #636466; padding: 1px 1px 1px 1px; border: 2px solid #636466; border-width: 0 0px 0px 0; }
+
+/*=================================================================*/
+/* Content Area images and color */
+/* background image and background color */
+/* background color is always behind image */
+#t-container { position: relative; width: 1007px; margin: 0 auto; text-align: left; background: url('890_m_1px_hl_peach.png') repeat-y; }
+
+/*=================================================================*/
+/*t-center is the larger container that holds t-links and t-content*/
+/*t-links holds the menu nav, and t-content holds page content*/
+#t-center { position: relative; background: url('890_m_hl_peach.png') no-repeat; min-height: 600px; _height: 600px; }
+
+/* customize menu links */
+#t-links { padding-left: 50px; padding-top: 20px; font-size: 16px; width: 135px; display: block; margin: 0; }
+
+#t-links ul { margin: 0; list-style-type: none; color: #EA8E7F; }
+
+#t-links li { margin-top: 0px; margin-bottom: 10px; }
+
+#t-links a { color: #EA8E7F; font-size: 16px; text-decoration: none; font-weight: normal; }
+
+#t-link a:visited { color: #EA8E7F; font-size: 16px; text-decoration: none; font-weight: bold; }
+
+#t-link a:hover { color: #EA8E7F; font-size: 16px; text-decoration: none; font-weight: bold; }
+
+/* Set middle image */
+#t-content { margin: 0 65px 0 250px; padding-top: 20px; padding-bottom: 20px; }
+
+/* the content text */
+.c-form { font-family:  Verdana, arial, sans-serif; font-size: 14px; line-height: 22px; color: #636466; text-align: left; }
+
+.c-text { font-family:  Verdana, arial, sans-serif; font-size: 14px; line-height: 20px; color: #636466; text-align: left; }
+
+.c-info { font-family:  Verdana, arial, sans-serif; font-size: 14px; color: #636466; text-align: left; line-height: 21px; }
+
+.c-date { font-family:  Verdana, arial, sans-serif; font-size: 16px; color: #636466; text-align: left; font-weight: bold; line-height: 26px; }
+
+#c-countdown-days { font-family:  Verdana, arial, sans-serif; font-size: 14px; color: #EA8E7F; text-align: left; font-weight: bold; line-height: 30px; }
+
+#c-countdown-text { font-family:  Verdana, arial, sans-serif; font-size: 14px; color: #EA8E7F; text-align: left; font-weight: bold; line-height: 30px; }
+
+.c-odd,
+.c-even { margin: 30px 0; /* 30px top and bottom, no margin left and right */ }
+
+.c-intro { color: #636466; }
+
+/* Photo Gallery Styles Start */
+/*space for gallery photo - should remain at 214 */
+#c-galleries-container .c-photo { width: 214px; padding-bottom: 0px; }
+
+/*spaces gallery description from it's title */
+#c-galleries-container .c-text { padding-top: 0px; }
+
+/*title link for gallery name */
+#c-galleries-container .c-subtitle { left: 241px; padding-top: 0px; }
+
+/*backgrounds for galleries odd */
+#c-galleries-container .c-odd { background-color: transparent; padding: 15px 0px 0px 15px; margin-bottom: 15px; margin-top: 15px; }
+
+/*backgrounds for galleries even */
+#c-galleries-container .c-even { background-color: transparent; padding: 15px 0px 0px 15px; margin-bottom: 15px; margin-top: 15px; }
+
+/* display of thumbnails inside gallery */
+#c-photo-list .c-photo { width: 214px; height: 214px; }
+
+/* padding to manually center thumbnails in content region */
+#c-photo-list { margin-left: 50px; }
+
+/* background color for individual thumbnails in a gallery */
+#c-photo-list .c-odd{ background-color: transparent; margin-right: 10px; margin-bottom: 10px; }
+
+/* background color for individual thumbnails in a gallery */
+#c-photo-list .c-even{ background-color: transparent; margin-bottom: 10px; }
+
+/* background color for individual large detail images */
+#c-photo-container { background-color: transparent; padding: 10px 10px 10px 10px; }
+
+/* background color for individual large detail images */
+#c-photo-container .c-even { text-align: center; }
+
+/* buttons for large image viewer - back to gallery */
+.c-page-up { margin-right: 10px; }
+
+/* buttons for large image viewer - next */
+.c-page-next { border: solid #EA8E7F 1px; padding: 5px 5px 5px 5px; background-color: #636466; margin-right: 96px; text-align: center; }
+.c-page-next:hover {
+        background-color: #f5f5f5;}
+
+/* buttons for large image viewer - previous */
+.c-page-previous { border: solid #EA8E7F 1px; padding: 5px 5px 5px 5px; margin-right: 8px; background-color: #636466; text-align: center; }
+.c-page-previous:hover {
+        background-color: #f5f5f5;}
+
+/* background color for individual large detail images */
+#c-photo-container .c-text { margin-left: 10px; margin-right: 10px; }
+
+/* Photo Gallery Styles End */
+
+/* align photos with text on our story and wedding party */
+#c-party-container .c-photo { float: left; padding: 10px 10px 0 0; }
+#c-story-container .c-photo { float: right; padding: 10px 0 0 10px; }
+
+/*=================================================================*/
+/* Music & Blog Styles Start */
+#c-music-playlist .c-odd, #c-music-playlist .c-even { border-bottom: 1px dotted #333333; }
+#c-music-suggestions .c-odd, #c-music-suggestions .c-even { border-bottom: 1px dotted #333333; }
+.c-blog-container .c-odd, .c-blog-container .c-even { border-bottom: 1px dotted #333333; }
+.c-blog-container .c-comments { color: #333333; }
+.c-byline { color: #333333;}
+
+/* Music Player Pop-up Heading */
+.c-player-container h4 { color: #000000; }
+
+/* Headings */
+h3 { font-family:  Verdana, arial, sans-serif; font-size: 22px; color: #636466; text-align: left; /*margin-top : 1.5%;*/ margin-bottom: 2.0%; text-decoration: none; font-weight: lighter; }
+
+h4 { font-family:  Verdana, arial, sans-serif; font-size: 19px; color: #EA8E7F; text-align: left; margin-top: 1.5%; margin-bottom: 1.5%; line-height: 21px; text-decoration: none; font-weight: lighter; }
+
+h5 { font-family:  Verdana, arial, sans-serif; font-size: 15px; color: #636466; text-align: left; margin-top: 1.5%; margin-bottom: 1.5%; line-height: 21px; text-decoration: none; }
+
+/*===================================================================*/
+/* Set styles for form elements and buttons */
+ 
+.c-form .c-input-text { font-size: 13px; color: #636466; }
+
+ 
+.c-buttons input,.hotels .search-widget button {
+        border: 1px solid #EA8E7F;
+        background-color: #636466;
+        color: #ffffff;
+        font-family:  Verdana, arial, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 6px;
+}
+
+
+.c-buttons input:hover,.hotels .search-widget button:hover{
+        background-color: #EA8E7F;
+}
+
+
+.c-buttons input:active {
+        background-color: #EA8E7F;
+}
+/*===================================================================*/
+/* Set footer image */
+#t-footer { padding-top: 80px; padding-bottom: 80px; padding-left: 0px; background: url('890_f_hl_peach.png') no-repeat left top; text-align: center; color: #636466; line-height: 7px; font-size: 11px; }
+
+#t-footer a { color: #636466; font-size: 11px; }
+
+#t-footer a:visited { color: #636466; font-size: 11px; }
+
+#t-footer a:hover { color: #636466; font-size: 11px; }

@@ -1,0 +1,46 @@
+<div id="c-guestbook-sign-container" class="c-container">
+	<%= form_for(@guestbookpost) do |f| %>
+	  <% if @guestbookpost.errors.any? %>
+	    <div id     = "error_explanation">
+	      <h2><%= pluralize(@guestbookpost.errors.count, "error") %> prevented your guestbook post from being saved:</h2>
+
+	      <ul>
+	      <% @guestbookpost.errors.full_messages.each do |msg| %>
+	        <li><%= msg %></li>
+	      <% end %>
+	      </ul>
+	    </div>
+	  <% end %>
+	<table id="c-guestbook-form" class="c-form">
+		<tr id="c-guestbook-sign-name" class="c-odd">
+			<td><%= f.label :name %></td>
+			<td><%= f.text_field :name, class: "c-input-text" %></td>
+		</tr>
+		<tr id="c-guestbook-sign-email" class="c-even">
+			<td><%= f.label :email %></td>
+			<td>
+				<%= f.text_field :email, class: "c-input-text" %>
+				<small>Your email address will be visible to the couple only</small>
+			</td>
+		</tr>
+		<tr id="c-guestbook-sign-comments" class="c-odd">
+			<td><%= f.label :body %></td>
+			<td><%= f.text_area :body, class: "c-input-text" %></textarea></td>
+		</tr>
+		<tr id="">
+			<td colspan="2">
+				<ul class="c-buttons">
+					<!-- <li id="c-guestbook-sign-preview"><input type="submit" name="preview" value="Preview Entry" /></li> -->
+					<li id="c-guestbook-sign-save"><%= f.submit "Sign Guestbook" %></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	</form>
+</div>
+
+		</div>
+	</div>
+
+
+<% end %>

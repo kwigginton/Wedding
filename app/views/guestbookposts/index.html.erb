@@ -1,0 +1,23 @@
+<h3 id="c-guestbook-title">Guestbook</h3>
+<div id="c-guestbook-sign-link" class="c-app-link">
+	<%= link_to 'Sign our guestbook', new_guestbookpost_path %>
+</div>
+	<% x = 0
+	@guestbookposts.each do |guestbookpost|
+		x += 1 %>
+	<div class="c-<%= x%2==0 ? 'odd' : 'even' %>">
+		<div class="c-subtitle"><h4><%= guestbookpost.name %></h4></div>
+		<div class="c-subtitle"><h5><%= guestbookpost.created_at.strftime("%b %-d, %Y") %></h5></div>
+		<div class="c-text"><%= guestbookpost.body %></div>
+		<% if is_logged_in? %>
+		<div class="c-subtitle"><small><%= guestbookpost.email %></small></div>
+		<div class="c-subtitle"><small><%= link_to 'Edit', edit_guestbookpost_path(guestbookpost) %></small></div>
+		<div class="c-subtitle"><small><%= link_to 'Destroy', guestbookpost, method: :delete, data: { confirm: 'Are you sure?' } %></small></div>
+		<% end %>
+	</tr>
+	<% end %>
+</table>
+
+<br />
+
+
