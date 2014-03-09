@@ -1,0 +1,2 @@
+module GuestbookpostsHelper
+end
