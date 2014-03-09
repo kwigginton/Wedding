@@ -46,6 +46,9 @@
 			</div>
 			<div id="t-footer">
 				<a href="http://www.storkie.com/p-130567-hedgehog-love.aspx" target="_blank" rel="nofollow">Design by Storkie</a>
+				<% if is_logged_in? %>
+				<%= link_to "Sign Out", logout_path, :method => :delete %>
+				<% end %>
 			</div>
 
 		</body>

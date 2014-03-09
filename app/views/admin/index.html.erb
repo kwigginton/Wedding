@@ -1,5 +1,5 @@
 <h3>Welcome</h3>
-<p>It's <%= Time.now %></p>
+<p>It's <%= Time.now.strftime('%b %-d %Y, %H:%M:%S') %></p>
 <p>We have:</br>
 	<%= pluralize(@total_posts, "guestbook post") %></br>
-	<%= pluralize(@total_reservations, "RSVP") %></p>
+	<%= link_to pluralize(@total_reservations, "RSVP"), reservations_index_path %></p>

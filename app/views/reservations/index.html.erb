@@ -10,7 +10,9 @@
     <th></th>
   </tr>
 
-<% @reservations.each do |reservation| %>
+<% attendeesTotal = 0
+@reservations.each do |reservation|
+	attendeesTotal += reservation.attendees %>
   <tr>
     <td><%= reservation.email %></td>
     <td><%= reservation.name %></td>
@@ -21,6 +23,7 @@
   </tr>
 <% end %>
 </table>
+<p><small>In total, we have <%= pluralize(attendeesTotal, 'attendee') %></small></p>
 
 <br />
 
