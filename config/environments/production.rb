@@ -64,7 +64,7 @@ Wedding::Application.configure do
   config.active_support.deprecation = :notify
 
   # Make Heroku's Asset pipeline happy.
-  config.assets.precompile += %w( *.js *.css  )
+  config.assets.precompile += %w( *.js *.css *.jpg)
   
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
