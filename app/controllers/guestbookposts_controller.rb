@@ -60,7 +60,7 @@ class GuestbookpostsController < ApplicationController
     @guestbookpost = Guestbookpost.find(params[:id])
 
     respond_to do |format|
-      if @guestbookpost.update_attributes(params[:guestbookpost])
+      if @guestbookpost.update_attributes(post_params)
         format.html { redirect_to @guestbookpost, notice: 'Guestbookpost was successfully updated.' }
         format.json { head :no_content }
       else
@@ -84,7 +84,7 @@ class GuestbookpostsController < ApplicationController
   
   private
   def post_params
-    params.require(:guestbookpost).permit(:body, :email, :name, :created_at)
+    params.require(:guestbookpost).permit(:body, :email, :name, :created_at, :updated_at)
   end
   
 end
