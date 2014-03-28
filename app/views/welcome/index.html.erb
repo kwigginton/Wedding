@@ -23,7 +23,9 @@
 
   <script type="text/javascript">
           function noticeAlert() {
-              alert("<%= flash[ :notice ] %>");
+              if(confirm("<%= flash[ :notice ] %>")) {
+              	document.location.href = "<%= new_guestbookpost_url %>";
+              }
           };
 					window.onload = noticeAlert();
   </script>

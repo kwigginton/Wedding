@@ -45,7 +45,7 @@ class ReservationsController < ApplicationController
 
     respond_to do |format|
       if @reservation.save
-        format.html { redirect_to welcome_url, notice: 'Thank you for your RSVP, your reservation was successfully created.' }
+        format.html { redirect_to welcome_url, notice: 'Thank you for your RSVP, would you like to sign our guestbook?' }
       else
         format.html { render action: "new" }
         format.json { render json: @reservation.errors, status: :unprocessable_entity }
