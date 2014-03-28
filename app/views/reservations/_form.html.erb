@@ -23,15 +23,15 @@
     <%= f.label :attendees, 'Number of attendees' %><br />
     <%= f.number_field :attendees, class: 'c-input-text' %>
   </div>
+	<div class="field">
+		<%= f.label :childcare, 'I need child care during the ceremoy:' %>
+		<%= f.check_box :childcare %>
+  <div class="actions">
   <div class="field">
     <%= f.label :roomaccomodation, 'I need hotel accommodations during my stay:' %>
 		<%= f.check_box :roomaccomodation %>
 		</br>
 	</div>
-	<div class="field">
-		<%= f.label :childcare, 'I need child care during the ceremoy:' %>
-		<%= f.check_box :childcare %>
-  <div class="actions">
     <%= f.submit %>
   </div>
 </div>
