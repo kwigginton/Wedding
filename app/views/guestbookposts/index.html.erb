@@ -3,7 +3,7 @@
 	<%= link_to 'Sign our guestbook', new_guestbookpost_path %>
 </div>
 	<% x = 0
-	@guestbookposts.each do |guestbookpost|
+	@guestbookposts.sort_by(&:created_at).reverse.each do |guestbookpost|
 		x += 1 %>
 	<div class="c-<%= x%2==0 ? 'odd' : 'even' %>">
 		<div class="c-subtitle"><h4><%= guestbookpost.name %></h4></div>
