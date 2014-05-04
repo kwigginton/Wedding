@@ -5,6 +5,7 @@
     <th>Email</th>
     <th>Name</th>
     <th>Attendees</th>
+		<th>Childcare?</th>
     <th></th>
     <th></th>
     <th></th>
@@ -17,6 +18,7 @@
     <td><%= reservation.email %></td>
     <td><%= reservation.name %></td>
     <td><%= reservation.attendees %></td>
+		<td><%= reservation.childcare == nil ? No : reservation.childcare %></td>
     <td><%= link_to 'Show', reservation %></td>
     <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
     <td><%= link_to 'Destroy', reservation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
