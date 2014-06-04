@@ -88,6 +88,8 @@ Wedding::Application.routes.draw do
   
   get 'accommodations', to: 'accommodations#accommodations'
   
+  get 'bachelorette', to: 'bachelorette#bachelorette'
+  
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
