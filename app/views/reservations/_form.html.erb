@@ -15,21 +15,21 @@
     <%= f.label :name, 'Full Name' %><br />
     <%= f.text_field :name, class: 'c-input-text' %>
   </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email, class: 'c-input-text' %>
+  </div>
 	<div class="field">
 		<%= f.label :attending, 'I will be attending:'%>
 		<%= f.select :attending, {"Yes" => true, "No" => false} %>
 	</div>
 	<div class="hidden-fields">
 	  <div class="field">
-	    <%= f.label :email %><br />
-	    <%= f.text_field :email, class: 'c-input-text' %>
-	  </div>
-	  <div class="field">
 	    <%= f.label :attendees, 'Number of attendees' %><br />
 	    <%= f.number_field :attendees, class: 'c-input-text' %>
 	  </div>
 		<div class="field">
-			<%= f.label :childcare, 'I need child care during the ceremoy:' %>
+			<%= f.label :childcare, 'I need child care during the ceremony:' %>
 			<%= f.check_box :childcare %>
 	  </div>
 	  <div class="field">
