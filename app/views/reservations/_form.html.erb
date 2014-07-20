@@ -17,7 +17,7 @@
   </div>
 	<div class="field">
 		<%= f.label :attending, 'I will be attending:'%>
-		<%= f.select :attending, ['Yes', 'No'] %>
+		<%= f.select :attending, {"Yes" => true, "No" => false} %>
 	</div>
 	<div class="hidden-fields">
 	  <div class="field">

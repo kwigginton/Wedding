@@ -2,11 +2,11 @@
 
 <table>
   <tr>
-    <th>Email</th>
     <th>Name</th>
+    <th>Email</th>
     <th>Attendees</th>
 		<th>Childcare?</th>
-    <th></th>
+    <th>Attending?</th>
     <th></th>
     <th></th>
   </tr>
@@ -15,10 +15,11 @@
 @reservations.each do |reservation|
 	attendeesTotal += reservation.attendees %>
   <tr>
-    <td><%= reservation.email %></td>
     <td><%= reservation.name %></td>
+    <td><%= reservation.email %></td>
     <td><%= reservation.attendees %></td>
 		<td><%= reservation.childcare == nil ? "False" : reservation.childcare %></td>
+		<td><%= reservation.attending ? 'No' : 'Yes' %></td>
     <td><%= link_to 'Show', reservation %></td>
     <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
     <td><%= link_to 'Destroy', reservation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
