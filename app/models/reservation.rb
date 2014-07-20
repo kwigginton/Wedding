@@ -1,5 +1,6 @@
 class Reservation < ActiveRecord::Base
-  validates :name, :attendees, :email, presence: true
+  validates :name, presence: true
+  validates :attendees, :email, presence: true, if: :attending?
   validate  :email_regex
 
    def email_regex

@@ -12,27 +12,44 @@
   <% end %>
 <div class="c-form">
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email, class: 'c-input-text' %>
-  </div>
-  <div class="field">
     <%= f.label :name, 'Full Name' %><br />
     <%= f.text_field :name, class: 'c-input-text' %>
   </div>
-  <div class="field">
-    <%= f.label :attendees, 'Number of attendees' %><br />
-    <%= f.number_field :attendees, class: 'c-input-text' %>
-  </div>
 	<div class="field">
-		<%= f.label :childcare, 'I need child care during the ceremoy:' %>
-		<%= f.check_box :childcare %>
-  <div class="actions">
-  <div class="field">
-    <%= f.label :roomaccomodation, 'I need hotel accommodations during my stay:' %>
-		<%= f.check_box :roomaccomodation %>
-		</br>
+		<%= f.label :attending, 'I will be attending:'%>
+		<%= f.select :attending, ['Yes', 'No'] %>
+	</div>
+	<div class="hidden-fields">
+	  <div class="field">
+	    <%= f.label :email %><br />
+	    <%= f.text_field :email, class: 'c-input-text' %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :attendees, 'Number of attendees' %><br />
+	    <%= f.number_field :attendees, class: 'c-input-text' %>
+	  </div>
+		<div class="field">
+			<%= f.label :childcare, 'I need child care during the ceremoy:' %>
+			<%= f.check_box :childcare %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :roomaccomodation, 'I need hotel accommodations during my stay:' %>
+			<%= f.check_box :roomaccomodation %>
+		</div>
 	</div>
     <%= f.submit %>
   </div>
 </div>
+
+<script type="text/javascript">
+	$('#reservation_attending').change( function(){
+		var thisdd = $(this);
+
+		if ( $('#reservation_attending option:selected').text() == "Yes" ) {
+			$('.hidden-fields').show();
+		} else {
+			$('.hidden-fields').hide();
+		}
+	});
+</script>
 <% end %>
