@@ -18,15 +18,3 @@
 		</td>
 	</tr>
 </table>
-
-<% if flash[:warning] or flash[:notice] %>
-
-  <script type="text/javascript">
-          function noticeAlert() {
-              if(confirm("<%= flash[ :notice ] %>")) {
-              	document.location.href = "<%= new_guestbookpost_url %>";
-              }
-          };
-					window.onload = noticeAlert();
-  </script>
-<% end %>

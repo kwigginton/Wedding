@@ -1,4 +1,7 @@
 Wedding::Application.routes.draw do
+  
+  get "thankyoupage", to: "thankyoupage#show", as: "thankyou"
+  
   get "admin" => 'admin#index'
   controller :sessions do
     get 'login' => :new

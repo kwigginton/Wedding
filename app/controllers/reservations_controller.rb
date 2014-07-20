@@ -45,7 +45,7 @@ class ReservationsController < ApplicationController
 
     respond_to do |format|
       if @reservation.save
-        format.html { redirect_to welcome_url, notice: 'Thank you for your RSVP, would you like to sign our guestbook?' }
+        format.html { redirect_to thankyou_url }
       else
         format.html { render action: "new" }
         format.json { render json: @reservation.errors, status: :unprocessable_entity }
@@ -83,7 +83,7 @@ class ReservationsController < ApplicationController
   
   private
   def reservation_params
-    params.require(:reservation).permit(:attendees, :email, :name, :attending, :childcare, :roomaccomodation)
+    params.require(:reservation).permit(:attendees, :email, :name, :attending, :childcare, :attendee_names)
   end
   
 end

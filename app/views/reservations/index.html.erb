@@ -6,7 +6,6 @@
     <th>Email</th>
     <th>Attendees</th>
 		<th>Childcare?</th>
-		<th>Room Accomodation?</th>
     <th>Attending?</th>
     <th></th>
     <th></th>
@@ -14,13 +13,12 @@
 
 <% attendeesTotal = 0
 @reservations.each do |reservation|
-	attendeesTotal += reservation.attendees %>
+	attendeesTotal += reservation.attendees if reservation.attendees? %>
   <tr>
     <td><%= reservation.name %></td>
     <td><%= reservation.email %></td>
     <td><%= reservation.attendees %></td>
 		<td><%= reservation.childcare ? 'Yes' : 'No'  %></td>
-		<td><%= reservation.roomaccomodation ? 'Yes' : 'No' %>
 		<td><%= reservation.attending ? 'Yes' : 'No' %></td>
     <td><%= link_to 'Show', reservation %></td>
     <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>

@@ -20,24 +20,24 @@
     <%= f.text_field :email, class: 'c-input-text' %>
   </div>
 	<div class="field">
-		<%= f.label :attending, 'I will be attending:'%>
-		<%= f.select :attending, {"Yes" => true, "No" => false} %>
+		<%= f.label :attending, 'Will you be attending?'%>
+		<%= f.select :attending, {"Yes, with pleasure" => true, "No, with regrets" => false} %><br /><br />
 	</div>
 	<div class="hidden-fields">
 	  <div class="field">
-	    <%= f.label :attendees, 'Number of attendees' %><br />
+	    <%= f.label :attendees, 'Number of attendees including yourself:' %><br />
 	    <%= f.number_field :attendees, class: 'c-input-text' %>
 	  </div>
+		<div class="field">
+			<%= f.label :attendee_names, "Full names of attendees (separated by comma):" %><br />
+			<%= f.text_area :attendee_names %>
+		</div>
 		<div class="field">
 			<%= f.label :childcare, 'I need child care during the ceremony:' %>
 			<%= f.check_box :childcare %>
 	  </div>
-	  <div class="field">
-	    <%= f.label :roomaccomodation, 'I need hotel accommodations during my stay:' %>
-			<%= f.check_box :roomaccomodation %>
-		</div>
 	</div>
-    <%= f.submit %>
+    <%= f.submit 'Send RSVP'%>
   </div>
 </div>
 
@@ -45,7 +45,23 @@
 	$('#reservation_attending').change( function(){
 		var thisdd = $(this);
 
-		if ( $('#reservation_attending option:selected').text() == "Yes" ) {
+		if ( $('#reservation_attending option:selected').text() == "Yes, with pleasure" ) {
+			$('.hidden-fields').show();
+		} else {
+			$('.hidden-fields').hide();
+		}
+	});
+	$("#reservation_attendees").change( function(event) {
+		var thisfield = $(this);
+		
+		if ( thisfield.val() < 0 ) {
+			thisfield.val(0);
+		}
+	});
+	$('#reservation_attending').change( function(){
+		var thisdd = $(this);
+
+		if ( $('#reservation_attending option:selected').text().indexOf('Yes') != -1 ) {
 			$('.hidden-fields').show();
 		} else {
 			$('.hidden-fields').hide();
