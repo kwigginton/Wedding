@@ -93,6 +93,12 @@ Wedding::Application.routes.draw do
   
   get 'bachelorette', to: 'bachelorette#bachelorette'
   
+  get 'freedomhall', to: 'freedom_hall#index'
+  
+  get 'verify', to: 'freedom_hall#verification_page'
+  
+  post 'verify', to: 'freedom_hall#verify'
+  
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.

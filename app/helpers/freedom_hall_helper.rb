@@ -1,0 +1,2 @@
+module FreedomHallHelper
+end
