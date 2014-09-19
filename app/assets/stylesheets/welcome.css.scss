@@ -792,6 +792,23 @@ tr.c-odd:after {
 /*===================================================================*/
 
 /*===================================================================*/
+/* DONATION ITEMS */
+
+#c-donation-items-container .c-even, #c-donation-items-container .c-odd {
+    position: relative;
+    width: 300px;
+    float: left;
+    background: #fff;
+    text-align: center;
+    border: 10px solid #ccc; /* IE 8 fallback */
+    border: 10px solid rgba(0, 0, 0, 0.2);
+    margin: 0 0 15px 20px;
+    padding: 0 0px 40px 0px;
+}
+
+/*===================================================================*/
+
+/*===================================================================*/
 /* REGISTRIES */
 
 #c-registries-container .c-even, #c-registries-container .c-odd {

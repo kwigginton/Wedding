@@ -1,5 +1,9 @@
 Wedding::Application.routes.draw do
   
+  resources :donations
+
+  resources :donation_items
+
   get "thankyoupage", to: "thankyoupage#show", as: "thankyou"
   
   get "admin" => 'admin#index'
@@ -99,6 +103,8 @@ Wedding::Application.routes.draw do
   
   post 'verify', to: 'freedom_hall#verify'
   
+  resources :donations
+
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
